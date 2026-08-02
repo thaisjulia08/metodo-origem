@@ -15,3 +15,37 @@ links.forEach(link => {
     }
   });
 });
+// Animação das seções ao aparecer na tela
+const revealElements = document.querySelectorAll("section");
+
+revealElements.forEach(section => {
+  section.classList.add("reveal");
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("is-visible");
+    }
+  });
+}, {
+  threshold: 0.15
+});
+// Animação das seções ao aparecer na tela
+const revealElements = document.querySelectorAll("section");
+
+revealElements.forEach(section => {
+  section.classList.add("reveal");
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("is-visible");
+    }
+  });
+}, {
+  threshold: 0.15
+});
+
+revealElements.forEach(section => observer.observe(section));
