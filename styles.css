@@ -98,4 +98,12 @@
     color: #166534;
     font-size: 0.92rem;
     font-weight: 600;
+}@media (max-width: 850px) {
+  .hero {
+    gap: 22px;
+  }
+
+  .coverWrap {
+    margin-top: -12px;
+  }
 }
