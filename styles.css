@@ -8,4 +8,11 @@
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
+}.card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(15, 48, 54, 0.16);
 }
