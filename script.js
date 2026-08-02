@@ -1,5 +1,5 @@
 // Troque somente o valor abaixo quando o checkout da Kiwify estiver pronto.
-const CHECKOUT_URL = '';
+const CHECKOUT_URL = 'https://pay.kiwify.com.br/cQfafzk';
 const links = document.querySelectorAll('.checkout-link');
 const notice = document.createElement('div');
 notice.className = 'checkoutNotice';
