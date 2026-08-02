@@ -15,4 +15,38 @@
 .card:hover {
   transform: translateY(-6px);
   box-shadow: 0 14px 30px rgba(15, 48, 54, 0.16);
+}.button {
+  position: relative;
+  overflow: hidden;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 70%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+  rgba(255,255,255,.35),
+    transparent
+  );
+  transform: skewX(-25deg);
+  animation: shine 3.8s infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -120%;
+  }
+
+  45% {
+    left: 160%;
+  }
+
+  100% {
+    left: 160%;
+  }
 }
