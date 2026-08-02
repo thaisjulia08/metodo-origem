@@ -106,4 +106,29 @@
   .coverWrap {
     margin-top: -12px;
   }
+}/* ===== Entrada em cascata dos cards ===== */
+
+.grid .card {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease,
+    box-shadow 0.25s ease;
+}
+
+.reveal.is-visible .grid .card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal.is-visible .grid .card:nth-child(1) { transition-delay: 0.05s; }
+.reveal.is-visible .grid .card:nth-child(2) { transition-delay: 0.15s; }
+.reveal.is-visible .grid .card:nth-child(3) { transition-delay: 0.25s; }
+.reveal.is-visible .grid .card:nth-child(4) { transition-delay: 0.35s; }
+.reveal.is-visible .grid .card:nth-child(5) { transition-delay: 0.45s; }
+.reveal.is-visible .grid .card:nth-child(6) { transition-delay: 0.55s; }
+
+.reveal.is-visible .grid .card:hover {
+  transform: translateY(-6px);
 }
